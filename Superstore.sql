@@ -16,4 +16,31 @@ INSERT INTO Products(id,name,Price,Availability,Quality) Values(105,"Pasta",100,
 INSERT INTO Products(id,name,Price,Availability,Quality) Values(13,"hotel king",120,"yes","Best");
 INSERT INTO Products(id,name,Price,Availability,Quality) Values(96,"facewash",70,"no","good");
 
-select * from Products;
+select * from products;
+
+select * from products where price = 100;
+
+select price,quality from products;
+
+select * from products order by price asc;
+
+select * from products order by price desc;
+
+select * from products order by price = 70 ;
+
+select * from products where price=70 or quality = "best";
+
+select * from products where name = "coffee" and id = 133;
+
+update products set Availability = "yes" where Availability="no";
+
+delete from products where name="face wash";
+
+select max(price) as max_price from products;
+
+select min(price) as min_price from products;
+
+
+
+
+
